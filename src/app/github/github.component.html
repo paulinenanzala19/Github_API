@@ -1,22 +1,17 @@
 <div class="container my-5">
     <div class="row">
       <div class="col-lg-6">
-        <img class="w-100 h-50 shadow" src="https://images.unsplash.com/photo-1567187574058-e1488ed4a991?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwbGFwdG9wfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
+          <img src="{{user.avatar_url}}" alt="">
+        
       </div>
       <div class="col-lg-6">
         <div class="p-5 mt-4">
-            <h1 class="display-4">H1 Heading</h1>
-            <p class="lead">public repos<br>followers<br>following<br>location<br>member since<br>website</p>
+            <button> <span>{{user.public_repos}}</span></button>
+            <h1 class="display-3 text-info">{{user.login}}</h1>
+            <p class="lead">public repos: <span style="color:rgb(10, 122, 160)">{{user.public_repos}}</span><br>followers: <span>{{user.followers}}</span><br>following: <span>{{user.following}}</span><br>location<br>member since<br>website</p>
             <a href="#" class="btn btn-outline-dark">Read More</a>
         </div>
     </div>
 </div>
 
-<!-- <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Panel title</h5>
-      <p class="card-text">Some quick example text to build on the panel title and make up the bulk of the panel's content.</p>
-      <a class="card-link">Card link</a>
-      <a class="card-link">Another link</a>
-    </div>
-  </div> -->
+
