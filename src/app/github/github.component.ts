@@ -9,8 +9,15 @@ import { GithubService } from '../github.service';
 export class GithubComponent implements OnInit {
   user!:any
   public_repos!:number
+  // repos:any
+  repo:any
 
-  constructor(private githubService:GithubService) {}
+  constructor(private githubService:GithubService) {
+    // this.githubService.githubRepos().subscribe((success)=>{
+    //   this.repos=this.githubService.githubRepos;
+    // })
+
+  }
   
 
   ngOnInit(): void {
@@ -18,6 +25,12 @@ export class GithubComponent implements OnInit {
       user=>{
         this.user=user
         console.log(user)
+      }
+    )
+    this.githubService.githubRepos().subscribe(
+      repo=>{
+        this.repo=repo
+        console.log(repo)
       }
     )
 
