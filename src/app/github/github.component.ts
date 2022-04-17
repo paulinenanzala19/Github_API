@@ -15,9 +15,7 @@ export class GithubComponent implements OnInit {
   repo:any
 
   constructor(private githubService:GithubService) {
-    // this.githubService.githubRepos().subscribe((success)=>{
-    //   this.repos=this.githubService.githubRepos;
-    // })
+    
 
   }
   
