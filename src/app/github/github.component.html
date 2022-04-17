@@ -7,7 +7,7 @@
     <div class="col-lg-6">
       <div class="p-5 mt-4">
         <h1 class="display-5 text-info">{{ user.login }}</h1>
-        <p class="lead">
+        <p class="lead text-info">
           public repos:
           <span style="color: rgb(10, 122, 160); font-weight: 900">{{
             user.public_repos
@@ -26,7 +26,7 @@
           }}</span
           ><br />member since:
           <span style="color: rgb(10, 122, 160); font-weight: 900">{{
-            user.created_at
+            user.created_at | date
           }}</span
           ><br />website:
           <a style="color: rgb(10, 122, 160); font-weight: 900">{{
@@ -38,7 +38,7 @@
     </div>
   </div>
 </div>
-<h1>Repositories</h1>
+<h1 class="heading text-info">Repositories</h1>
 
 <div class="container bootstrap snippets bootdeys " *ngFor="let repo of repo">
   <div>
@@ -54,7 +54,7 @@
           <div class="content">
             <h6 class="category"></h6>
             <h4 class="title">
-              <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+              <a href="{{ repo.html_url }}" appRepohighlight>{{ repo.name }}</a>
             </h4>
             <p class="description">{{ repo.description }}</p>
             <p class="description">created: {{ repo.created_at | dateAgo }}</p>

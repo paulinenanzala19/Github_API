@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import { GithubFormComponent } from './github-form/github-form.component';
 import { DateAgoPipe } from './date-ago.pipe';
+import { RepohighlightDirective } from './repohighlight.directive';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DateAgoPipe } from './date-ago.pipe';
     GithubComponent,
     GithubFormComponent,
     DateAgoPipe,
+    RepohighlightDirective,
    
   ],
   imports: [
