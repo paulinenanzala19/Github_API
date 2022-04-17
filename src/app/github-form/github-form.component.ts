@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output,EventEmitter } from '@angular/core';
+import { GithubService } from '../github.service';
 
 @Component({
   selector: 'app-github-form',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./github-form.component.css']
 })
 export class GithubFormComponent implements OnInit {
+  @Output()  newUsername=new EventEmitter()
+  username:string=""
+  submitForm(username:string){
+    this.newUsername.emit(username)
+    // console.log(username)
+   
+    
+  }
 
-  constructor() { }
+  constructor(private githubService:GithubService) { }
 
   ngOnInit(): void {
+
   }
 
 }
