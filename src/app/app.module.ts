@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import { GithubFormComponent } from './github-form/github-form.component';
+import { DateAgoPipe } from './date-ago.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
-    GithubFormComponent
+    GithubFormComponent,
+    DateAgoPipe,
+   
   ],
   imports: [
     BrowserModule,

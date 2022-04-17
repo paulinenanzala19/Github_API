@@ -46,7 +46,7 @@
         <a href="{{ repo.html_url }}">{{ repo.name }}</a>
       </h5>
       <p class="card-text">{{ repo.description }}</p>
-      <p class="card-text">created on : {{ repo.created_at | date }}</p>
+      <p class="card-text">created  : {{ repo.created_at | dateAgo }}</p>
       <!-- <a class="card-link">Card link</a> -->
       <a class="card-link">Another link</a>
     </div>
