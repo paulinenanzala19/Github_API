@@ -1,6 +1,6 @@
 <app-github-form (newUsername)="getOutput($event)"></app-github-form>
 <div class="container my-5">
-  <div class="row"*ngIf="user">
+  <div class="row" *ngIf="user">
     <div class="col-lg-6">
       <img src="{{ user.avatar_url }}" alt="" />
     </div>
@@ -37,18 +37,44 @@
       </div>
     </div>
   </div>
+</div>
+<h1>Repositories</h1>
 
-  <h1>Repositories</h1>
+<div class="container bootstrap snippets bootdeys " *ngFor="let repo of repo">
+  <div>
+  <div class="row" style="float: left;">
+    <div class="col-md-10 content-card " style="display:inline;">
+      <div class="card-big-shadow" >
+        <div
+          class="card card-just-text"
+          data-background="color"
+          data-color="blue"
+          data-radius="none"
+        >
+          <div class="content">
+            <h6 class="category"></h6>
+            <h4 class="title">
+              <a href="{{ repo.html_url }}">{{ repo.name }}</a>
+            </h4>
+            <p class="description">{{ repo.description }}</p>
+            <p class="description">created: {{ repo.created_at | dateAgo }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="card" *ngFor="let repo of repo">
+    <!-- <div class="card" *ngFor="let repo of repo">
     <div class="card-body">
       <h5 class="card-title">
         <a href="{{ repo.html_url }}">{{ repo.name }}</a>
       </h5>
       <p class="card-text">{{ repo.description }}</p>
       <p class="card-text">created  : {{ repo.created_at | dateAgo }}</p>
-      <!-- <a class="card-link">Card link</a> -->
+      
       <a class="card-link">Another link</a>
     </div>
+   </div> -->
+  </div>
+  
   </div>
 </div>
