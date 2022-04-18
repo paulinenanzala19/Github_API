@@ -2,7 +2,7 @@
 <div class="container my-5">
   <div class="row" *ngIf="user">
     <div class="col-lg-6">
-      <img src="{{ user.avatar_url }}" alt="" />
+      <img style="margin-left: 30%; border-radius: 50%; object-fit:cover; height: auto; width: 50%;" src="{{ user.avatar_url }}" alt="" />
     </div>
     <div class="col-lg-6">
       <div class="p-5 mt-4">
@@ -33,14 +33,26 @@
             user.blog
           }}</a>
         </p>
-        <a href="#" class="btn btn-outline-dark">Read More</a>
+        <!-- <a href="#" class="btn btn-outline-dark">Read More</a> -->
       </div>
     </div>
   </div>
 </div>
-<h1 class="heading text-info">Repositories</h1>
+<h1 class="heading text-info text-center mb-5">Repositories</h1>
+<div class="container" *ngFor="let repo of repo">
+  <ul>
+  <li>
+    <a href="{{ repo.html_url }}" appRepohighlight>
+      <h2>{{repo.name}}</h2>
+      <p>{{repo.description}}</p>
 
-<div class="container bootstrap snippets bootdeys " *ngFor="let repo of repo">
+    </a>
+  </li>
+  
+</ul>
+</div>
+
+<!-- <div class="container bootstrap snippets bootdeys " *ngFor="let repo of repo">
   <div>
   <div class="row" style="float: left;">
     <div class="col-md-10 content-card " style="display:inline;">
@@ -61,7 +73,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="card" *ngFor="let repo of repo">
     <div class="card-body">
@@ -74,7 +86,7 @@
       <a class="card-link">Another link</a>
     </div>
    </div> -->
-  </div>
+  <!-- </div>
   
   </div>
-</div>
+</div> -->

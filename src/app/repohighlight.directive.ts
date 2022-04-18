@@ -8,7 +8,7 @@ export class RepohighlightDirective {
   constructor(private elem:ElementRef) { }
 
   @HostListener('mouseenter') onMouseEnter(){
-    this.highlight('blue');
+    this.highlight('lightblue');
   }
   @HostListener('mouseleave') onMouseLeave(){
     this.highlight('');
