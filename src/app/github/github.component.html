@@ -45,6 +45,9 @@
     <a href="{{ repo.html_url }}" appRepohighlight>
       <h2>{{repo.name}}</h2>
       <p>{{repo.description}}</p>
+      <P> Created: {{repo.created_at | dateAgo}}</P>
+      <p>Watchers: {{repo.watchers}}</p>
+      <p>Forks:{{repo.forks}}</p>
 
     </a>
   </li>

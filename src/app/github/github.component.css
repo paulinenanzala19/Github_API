@@ -13,11 +13,11 @@ body {
  
 h2 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
  
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: normal;
 }
  
@@ -36,8 +36,8 @@ ul li a{
   color:#000;
   background:#ffc;
   display:block;
-  height:10em;
-  width:17em;
+  height:14em;
+  width:18em;
   padding:1em;
    transform: rotate(-6deg);
     transition: transform .15s linear;

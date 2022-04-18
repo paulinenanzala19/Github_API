@@ -1,27 +1,60 @@
-# GitHubAPI
+# GitHub_API
+## Author
+pauline Wafula
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+### Version
+18/04/2022
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+This is a web application  about GitHub_API that enables them to search the users from github using their username and returns the profile and their repos. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## screenshot
 
-## Build
+## Live link
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+* Install Angular
 
-## Running end-to-end tests
+* git clone ```https://github.com/paulinenanzala19/Github_API.git```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* cd angularQuotes
+* create an angular app through running this command $ ng new github
+* Generate component github form  by running the command $ ng generate component github form 
+* generate a highlight directive by running  the command $ ng generate directive highlight to highlight the repo on hover
+* generate a time pipe count that keeps track of time by running the command $ ng generate pipe date-count
 
-## Further help
+* code . or atom . depending on the text editor of your choice.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies Used
+
+* [TypeScript]
+* [HTML5]
+* [CSS]
+* [Bootstrap4]
+* [Javascript]
+* markdown
+
+
+## BDD
+| Behaviour      | Input        | Output       |
+| :------------- | :----------: | -----------: |
+|  user profile and repositories displaying |  github username  |   user profile and repositories  |
+
+
+
+## Known Bugs
+
+* Not any that am aware of but am open to new suggestion
+
+## Contact Information 
+
+If you have any question or contributions that would better this app, please email me at [paulinenanzala19@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2022 **Pauline Wafula**
